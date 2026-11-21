@@ -5,6 +5,7 @@ const url =
 
  async function getWeather () {
     weatherArea.textContent = "";
+    weatherArea.className = "card bg-dark text-light p-4 w-50 m-auto"
     const response = await fetch(url)
     const data = await response.json();
     console.log(data);
